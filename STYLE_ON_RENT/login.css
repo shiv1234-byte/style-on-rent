@@ -1,0 +1,112 @@
+:root {
+  --brand-rose: #E63946;
+  --brand-gold: #F8C471;
+  --brand-blush: #FFF5F5;
+  --brand-plum: #580F41;
+  --brand-mint: #CBF3F0;
+  --brand-charcoal: #23272A;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, var(--brand-blush) 60%, var(--brand-mint) 100%);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-card {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px #e639461a;
+  text-align: center;
+  transition: transform 0.3s;
+}
+.login-card:hover {
+  transform: translateY(-6px);
+}
+
+.login-title {
+  font-size: 2rem;
+  color: var(--brand-plum);
+  margin-bottom: 0.6rem;
+  font-weight: 800;
+}
+
+.login-subtitle {
+  color: var(--brand-charcoal);
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+
+.login-form {
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  color: var(--brand-plum);
+  margin-bottom: 0.4rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1.5px solid var(--brand-gold);
+  background: var(--brand-blush);
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--brand-rose);
+  box-shadow: 0 0 6px #e6394640;
+}
+
+.btn-login {
+  background: var(--brand-rose);
+  color: white;
+  border: none;
+  padding: 0.9rem;
+  width: 100%;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s, transform 0.2s;
+}
+.btn-login:hover {
+  background: var(--brand-gold);
+  color: var(--brand-plum);
+  transform: scale(1.05);
+}
+
+.login-links {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.login-links a {
+  color: var(--brand-rose);
+  text-decoration: none;
+  font-weight: 600;
+}
+.login-links a:hover {
+  color: var(--brand-plum);
+  text-decoration: underline;
+}
