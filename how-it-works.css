@@ -1,0 +1,63 @@
+.hiw-title {
+  text-align: center;
+  font-size: 2.4rem;
+  color: #580F41; /* --brand-plum */
+  font-weight: bold;
+  margin: 2rem 0 3rem 0;
+  letter-spacing: 1px;
+}
+
+.hiw-steps-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 1000px;
+  margin: 0 auto 2.5rem auto;
+}
+
+.hiw-step {
+  background: #FFF5F5; /* --brand-blush */
+  border-radius: 20px;
+  box-shadow: 0 4px 24px #e6394614;
+  padding: 2rem 1.5rem;
+  width: 220px;
+  text-align: center;
+  transition: transform .18s, box-shadow .18s;
+}
+.hiw-step:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 8px 32px #f8c47135;
+}
+
+.hiw-icon {
+  font-size: 2.4rem;
+  border-radius: 100%;
+  background: linear-gradient(135deg, #F8C471 60%, #E63946 100%);
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1.2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px #f8c47150;
+}
+
+.hiw-step h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.7rem;
+  font-size: 1.2rem;
+  color: #E63946; /* --brand-rose */
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+.hiw-step p {
+  color: #23272A; /* --brand-charcoal */
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+@media (max-width: 925px) {
+  .hiw-steps-container { flex-direction: column; align-items: center; gap: 1.6rem;}
+  .hiw-step { width: 97%; max-width: 390px;}
+}

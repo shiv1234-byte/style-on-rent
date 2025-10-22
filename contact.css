@@ -1,0 +1,125 @@
+.contact-section {
+  padding: 3rem 1rem;
+  background: #FFF5F5;
+  border-radius: 22px;
+  box-shadow: 0 4px 32px #e6394616;
+  max-width: 1100px;
+  margin: 3rem auto;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 2.3rem;
+  color: #580F41;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.contact-intro {
+  text-align: center;
+  color: #23272A;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+
+.contact-form {
+  flex: 1 1 480px;
+  background: #FFFFFF;
+  padding: 2rem;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px #f8c47125;
+}
+
+.form-group {
+  margin-bottom: 1.3rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  color: #580F41;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1.5px solid #F8C471;
+  background: #FFF5F5;
+  color: #23272A;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #E63946;
+  box-shadow: 0 0 6px #E6394644;
+}
+
+.btn-submit {
+  background: #E63946;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn-submit:hover {
+  background: #F8C471;
+  color: #580F41;
+  transform: scale(1.05);
+}
+
+.contact-details {
+  flex: 1 1 320px;
+  background: #CBF3F0;
+  padding: 2rem;
+  border-radius: 18px;
+  color: #23272A;
+  box-shadow: 0 4px 12px #cbf3f022;
+}
+
+.contact-details h3 {
+  color: #E63946;
+  margin-bottom: 1rem;
+}
+
+.contact-details p {
+  margin: 0.4rem 0;
+  font-size: 1rem;
+}
+
+.contact-details a {
+  color: #580F41;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-details a:hover {
+  color: #E63946;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-form,
+  .contact-details {
+    width: 100%;
+  }
+}
